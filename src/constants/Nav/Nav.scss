@@ -1,0 +1,60 @@
+@import "../../scss/button";
+@import "../../scss/variable";
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 1500px;
+    padding:.5rem 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: $bg--color;
+    &__item{
+        display: flex;
+        gap: .5rem;
+        .bell{
+            position: absolute;
+            &__notification{
+                position: relative;
+                top: -40%;
+                right: -50%;
+                height: .7rem;
+                width: .7rem;
+                border-radius: 50%;
+                background-color: $primary--color;
+                color:$bg--color;
+                font-size: .5rem;
+            }            
+        }
+    }
+    &__search{
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: $border--radius;
+        padding: 0 .4rem;
+        input{
+            outline: none;
+            border:1px;
+            padding: .4rem;
+            border-radius: $border--radius;
+            background-color: transparent;
+            &:focus{
+                color: $primary--color;
+                &+label{
+                    color: $primary--color;
+                }
+            }
+        }
+        label{
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

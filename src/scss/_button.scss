@@ -1,0 +1,77 @@
+@import "./variable";
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: $border--radius;
+  border: 1.7px solid $bg--primary--color;
+  color: $primary--color;
+  background-color: $bg--primary--color;
+  transition: $btn--transition;
+  cursor: pointer;
+
+  &.active,
+  &:hover {
+    background-color: $primary--color;
+    color: $bg--primary--color;
+    border-color: $primary--color;
+    box-shadow: $small--shadow;
+  }
+}
+.btn__dark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: $border--radius;
+  border: 1.7px solid $primary--color;
+  color: $primary--color;
+  transition: $btn--transition;
+  cursor: pointer;
+  background-color: $primary--color;
+  color: $bg--primary--color;
+  box-shadow: $small--shadow;
+  &:hover {
+    background-color: $primary--color--contrast;
+    border-color: $primary--color--contrast;
+    box-shadow: $small--shadow;
+  }
+}
+.btn__outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: $border--radius;
+    border: 1.7px solid $primary--color;
+    color: $primary--color;
+    transition: $btn--transition;
+    cursor: pointer;
+    background-color: $bg--primary--color;
+    &:hover {
+        background-color: $primary--color;
+        box-shadow: $small--shadow;
+        color: $bg--primary--color;
+      }
+  }
+  .btn__outline--white {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: $border--radius;
+    border: 1.7px solid $primary--color;
+    color: $primary--color;
+    transition: $btn--transition;
+    cursor: pointer;
+    &:hover {
+        background-color: $bg--primary--color;
+        box-shadow: $small--shadow;
+      }
+  }
+  

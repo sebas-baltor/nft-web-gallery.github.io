@@ -1,0 +1,8 @@
+@import "./variable";
+.title{
+    font-size: $title--size;
+    letter-spacing: 1px;
+}
+.subtitle{
+    font-size: $subtitle--size;
+}
