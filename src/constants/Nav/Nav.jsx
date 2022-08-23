@@ -1,14 +1,13 @@
 import React from "react";
 
 import { RiNotification3Line } from "react-icons/ri";
-import { BsFillCreditCard2BackFill } from "react-icons/bs";
+import { BsFillCreditCard2BackFill, BsChevronBarExpand } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
 import { CgMenu } from "react-icons/cg";
 import { MdSearch } from "react-icons/md";
 
 import "./Nav.scss";
 
-import { BsChevronBarExpand } from "react-icons/bs";
 
 export default function Nav() {
   

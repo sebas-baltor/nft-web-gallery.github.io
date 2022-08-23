@@ -1,0 +1,47 @@
+@import "../../scss/variable";
+.footer {
+    margin-top: 3rem;
+    &__flex {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+    
+    &__logo {
+        width: 30%;
+
+        &--social {
+            display: flex;
+            gap: .5rem;
+        }
+    }
+    &__item{
+        ul{
+            li{
+                cursor: pointer;
+                &:hover{
+                    color: $primary--color;
+                }
+            }
+        }
+    }
+
+    &__suscribe {
+        width: 30%;
+
+        &--form {
+            display: flex;
+            gap: .5rem;
+            input{
+                width: 90%;
+                padding:0 .5rem ;
+            }
+        }
+    }
+    &>p{
+        padding: 1rem 0;
+        text-align: center;
+    }
+}

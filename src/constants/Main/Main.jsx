@@ -19,8 +19,8 @@ export default function Main(props) {
                         {
                             props.photos.map(p=>{
                                 return(
-                                    <div className="img__grid--item">
-                                        <img className="zoom" src={p.urls.regular} alt={p.alt_description} key={p.id}/>
+                                    <div className="img__grid--item" key={p.id}>
+                                        <img className="zoom" src={p.urls.regular} alt={p.alt_description} />
                                     </div>
                                 )
                             })  

@@ -1,7 +1,10 @@
 @import "../../scss/variable";
+@import "../../scss/animation";
 
 .card{
+    display: inline-block;
     max-width: 18rem;
+    min-width: 18rem;
     overflow: hidden;
     border-radius: $border--radius;
     box-shadow: $small--shadow;
@@ -23,6 +26,7 @@
         margin: auto;
         &--img{
             margin-top: .5rem;
+            margin-bottom: .7rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -42,6 +46,18 @@
                     position: relative;
                     right: -10%;
                 }
+            }
+        }
+    
+        &--price{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: .7rem;
+            font-size: 1rem;
+            span{
+                display: flex;
+                align-items: center;
             }
         }
     }
