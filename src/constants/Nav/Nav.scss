@@ -9,9 +9,10 @@
     padding:.5rem 1rem;
     position: fixed;
     top: 0;
-    left: 0;
+    left: 50%;
     width: 100%;
     z-index: 10;
+    transform: translateX(-50%);
     background-color: $bg--color;
     &__item{
         display: flex;
